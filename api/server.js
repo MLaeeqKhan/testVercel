@@ -3,15 +3,15 @@
 const express = require("express");
 const app = express();
 const dotenv = require("dotenv");
-dotenv.config({ path: "./config.env" });
+dotenv.config({ path: "../config.env" });
 const PORT = process.env.PORT;
-const connection = require("./DB/conn");
+const connection = require("../DB/conn");
 const cors = require("cors");
 
 console.log("hello from  server.js");
-const authRouter = require("./Router/auth");
-const ChatAppcontrollerRouter = require("./Router/ChatAppController");
-const ForumControllerRouter = require("./Router/ForumController");
+const authRouter = require("../Router/auth");
+const ChatAppcontrollerRouter = require("../Router/ChatAppController");
+const ForumControllerRouter = require("../Router/ForumController");
 
 app.use(cors());
 app.use("/", authRouter);
