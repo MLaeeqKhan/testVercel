@@ -9,6 +9,8 @@ const connection = require("../DB/conn");
 const cors = require("cors");
 
 console.log("hello from  server.js");
+console.log("hello from  server.js");
+
 const authRouter = require("../Router/auth");
 const ChatAppcontrollerRouter = require("../Router/ChatAppController");
 const ForumControllerRouter = require("../Router/ForumController");
